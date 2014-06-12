@@ -1,0 +1,59 @@
+body {
+	background-color: #E6E7E8;
+	font: normal 18px/42px Arial, sans-serif;
+}
+
+.container {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 72px;
+	vertical-align: bottom;
+	color: #8DC63F;
+}
+
+.header a, .header a:visited, .header a:hover {
+	color: #8DC63F;
+}
+
+/* -------- form ---------- */
+form input[type="text"]{
+	height: 40px;
+	width: 360px;
+	background-color: #939598;
+	color: #E6E7E8;
+	margin: 0;
+}
+form button {
+	background-color: #8DC63F;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	float: right;
+}
+
+ul#the-list {
+	list-style: none;
+	margin: 0;
+}
+
+li {
+	padding:0 17px;
+	margin-top: 8px;
+	display: block;
+	height: 40px;
+	width: 350px;
+	background-color: #ffffff;
+	color: #58595B;
+}
+
+li.checked {
+	background-color: #E6E7E8;
+	color: #939598;
+	text-decoration: line-through;
+}
+
+
+
