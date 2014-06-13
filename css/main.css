@@ -80,11 +80,11 @@ ul#the-list {
 }
 
 li {
-	padding:0 17px;
+	padding:0 0 0 17px;
 	margin-top: 8px;
 	display: block;
 	height: 40px;
-	width: 366px;
+	width: 383px;
 	background-color: #ffffff;
 	color: #58595B;
 }
@@ -102,6 +102,17 @@ footer {
 	line-height: 30px;
 }
 
+li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: right;
+	text-align: center;
+}
+
+li a:hover {
+	background-color: #E6E7E8;
+}
 
 
 
