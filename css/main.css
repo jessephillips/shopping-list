@@ -42,6 +42,11 @@ form input[type="text"]{
 	vertical-align: top;
 	font: normal 18px/42px Arial, sans-serif;
 }
+
+input:focus, button:focus {
+	outline: none;
+}
+
 form button {
 	background-color: #8DC63F;
 	width: 40px;
@@ -57,18 +62,18 @@ form button:hover {
 
 /* ------ all this code is just for the placeholder color -------- */
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #E6E7E8;
+    color:    #BCBEC0;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #E6E7E8;
+    color:    #BCBEC0;
     opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #E6E7E8;
+    color:    #BCBEC0;
     opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #E6E7E8;
+    color:    #BCBEC0;
 }
 
 
@@ -112,8 +117,8 @@ li a {
 
 li a:hover {
 	background-color: #E6E7E8;
+	color: red;
 }
-
 
 
 

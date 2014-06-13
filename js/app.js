@@ -3,15 +3,29 @@ $(document).ready(function(){
 		event.preventDefault();
 		var foo = $('#the-form').find('#list-item-input').val();
 		addItem(foo);
+		$('#the-form').find('#list-item-input').val("");
 	});
-	$('a.dlt').on('click', function( event ){
+	$('#the-list').on('click', '.dlt', function( event ){
 		event.preventDefault();
-		alert("why!?");
+		//alert("why!?");
 		$(this).parent().remove();
+	});
+
+	$('#the-list').on('click', '.unchecked', function( event ){
+		//alert("check it");
+		$(this).find('a').remove();
+		$(this).addClass('checked').removeClass('unchecked');
+
+	})
+	.on('click', '.checked', function(){
+		var dltBox = $('<a class="dlt">x</a>');
+		$(this).addClass('unchecked')
+		.removeClass('checked')
+		.append(dltBox);
 	});
 });
 
 function addItem ( itemText ) {
-	var bar = $("<li>"+itemText+"<a class='dlt'>x</a></li>");
+	var bar = $('<li class="unchecked">'+itemText+'<a class="dlt">x</a></li>');
 	$('#the-list').append(bar);
 }
