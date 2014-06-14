@@ -121,8 +121,29 @@ li a:hover {
 }
 
 
+/* instructions */
+footer {
+  -webkit-transition: padding-left 0.3s ease;
+  -moz-transition: padding-left 0.3s ease;
+  -o-transition: padding-left 0.3s ease;
+  transition: padding-left 0.3s ease;
+}
 
+footer:hover {
+	padding-left: 17px;
+	background-color: #fff;
+	color: #8DC63F;
+}
 
+.instructions {
+	display: none;
+	line-height: 20px;
+	padding-bottom: 20px;
+}
+
+.instructions p {
+	margin-top: 10px;
+}
 
 
 

@@ -23,6 +23,9 @@ $(document).ready(function(){
 		.removeClass('checked')
 		.append(dltBox);
 	});
+	$('footer').on('click', function(){
+		$(this).find('.instructions').toggle();
+	});
 });
 
 function addItem ( itemText ) {
