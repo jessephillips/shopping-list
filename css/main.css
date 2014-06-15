@@ -85,7 +85,7 @@ ul#the-list {
 }
 
 li {
-	padding:0 0 0 17px;
+	padding-left: 12px;
 	margin-top: 8px;
 	display: block;
 	height: 40px;
@@ -94,17 +94,18 @@ li {
 	color: #58595B;
 }
 
+li span {
+	display: inline-block;
+	padding: 0 5px;
+}
+
 li.checked {
 	background-color: #E6E7E8;
 	color: #939598;
-	text-decoration: line-through;
 }
-/* -------- footer --------- */
-footer {
-	margin-top: 40px;
-	border-top: 1px solid #939598;
-	color: #939598;
-	line-height: 30px;
+
+li.checked span {
+	background: url("../images/strike.png") 0 21px repeat-x;
 }
 
 li a {
@@ -118,6 +119,14 @@ li a {
 li a:hover {
 	background-color: #E6E7E8;
 	color: red;
+}
+
+/* -------- footer --------- */
+footer {
+	margin-top: 40px;
+	border-top: 1px solid #939598;
+	color: #939598;
+	line-height: 30px;
 }
 
 

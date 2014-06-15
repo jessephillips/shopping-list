@@ -33,6 +33,6 @@ $(document).ready(function(){
 });
 
 function addItem ( itemText ) {
-	var bar = $('<li class="unchecked">'+itemText+'<a class="dlt">x</a></li>');
+	var bar = $('<li class="unchecked"><span>'+itemText+'</span><a class="dlt">x</a></li>');
 	$('#the-list').append(bar);
 }
