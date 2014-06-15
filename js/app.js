@@ -26,6 +26,10 @@ $(document).ready(function(){
 	$('footer').on('click', function(){
 		$(this).find('.instructions').toggle();
 	});
+	$(function() {
+    $( "#the-list" ).sortable();
+    $( "#the-list" ).disableSelection();
+  	});
 });
 
 function addItem ( itemText ) {
